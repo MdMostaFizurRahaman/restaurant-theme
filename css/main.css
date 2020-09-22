@@ -7279,3 +7279,39 @@ header .hero {
       .about .card-content p {
         font-size: 1.2rem;
         font-weight: 100; }
+
+.testimonial {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/testinomial.png);
+  height: 700px;
+  background-size: cover;
+  padding: 150px 0; }
+  .testimonial .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .testimonial .card {
+    padding: 3rem;
+    max-width: 800px; }
+    .testimonial .card-images {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .testimonial .card-images img {
+        display: block;
+        width: 80px;
+        clip-path: circle(50% at 50% 50%); }
+      .testimonial .card-images img:not(:last-child) {
+        margin-bottom: 1rem; }
+    .testimonial .card p {
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-bottom: 0; }
+    .testimonial .card-user {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center; }
+      .testimonial .card-user img {
+        display: inline-block;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 1rem; }
