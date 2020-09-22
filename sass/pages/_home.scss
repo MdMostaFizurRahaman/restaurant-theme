@@ -12,13 +12,6 @@
             font-weight: 400;
         }
 
-        &-body{
-            img{
-                height: 12px;
-                margin: 1rem;
-            }
-        }
-
         &-content{
             padding: 2rem 4rem;
             img{
@@ -27,11 +20,6 @@
 
             h4{
                 margin-top: 2rem;
-            }
-
-            p{
-                font-size: 1.2rem;
-                font-weight: 100;
             }
         }
     }
@@ -42,14 +30,13 @@
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/testinomial.png);
     height: 700px;
     background-size: cover;
-    padding: 150px 0;
     
     .container{
+        height: 100%;
         @include center;
     }
 
     .card{
-        padding: 3rem;
         max-width: 800px;
         &-images{
             display: flex;
@@ -63,10 +50,6 @@
 
             img:not(:last-child){
                 margin-bottom: 1rem;
-            }
-
-            img:last-child{
-              
             }
         }
 
@@ -90,4 +73,23 @@
 
         }
     }
+}
+
+.banner{
+    background: url(../../images/banner.png);
+    height: 700px;
+    background-size: cover;
+}
+
+
+.blog{
+    background: $bg-primary;
+    .card{
+        padding: 0;
+    }
+
+    &__post{
+        @include center;
+    }
+
 }

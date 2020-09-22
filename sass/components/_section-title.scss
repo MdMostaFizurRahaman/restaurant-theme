@@ -1,0 +1,15 @@
+.section-title{
+    text-align: center;
+    &__icon{
+        img{
+            height:8px;
+        }
+    }
+
+    &__content{
+        p{
+            font-size: 1.5rem;
+            font-weight: 100;
+        }
+    }
+}

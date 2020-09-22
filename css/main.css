@@ -7163,7 +7163,7 @@ body {
   font-family: 'Segoe UI', sans-serif !important;
   font-weight: 600; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif; }
 
 a {
@@ -7171,6 +7171,10 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
+
+p {
+  font-size: 1.2rem;
+  font-weight: 100; }
 
 header .home-alert {
   background: #662D90;
@@ -7255,6 +7259,20 @@ header .hero {
       border-radius: 22px;
       color: #fff; }
 
+.footer {
+  min-height: 500px;
+  background: url(../../images/footer@2x.png);
+  background-size: cover;
+  background-position: center; }
+
+.section-title {
+  text-align: center; }
+  .section-title__icon img {
+    height: 8px; }
+  .section-title__content p {
+    font-size: 1.5rem;
+    font-weight: 100; }
+
 .about {
   padding: 150px 0;
   background: #EFECE3; }
@@ -7267,30 +7285,23 @@ header .hero {
     .about .card-subtitle {
       font-size: 1.5rem;
       font-weight: 400; }
-    .about .card-body img {
-      height: 12px;
-      margin: 1rem; }
     .about .card-content {
       padding: 2rem 4rem; }
       .about .card-content img {
         height: 150px; }
       .about .card-content h4 {
         margin-top: 2rem; }
-      .about .card-content p {
-        font-size: 1.2rem;
-        font-weight: 100; }
 
 .testimonial {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/testinomial.png);
   height: 700px;
-  background-size: cover;
-  padding: 150px 0; }
+  background-size: cover; }
   .testimonial .container {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center; }
   .testimonial .card {
-    padding: 3rem;
     max-width: 800px; }
     .testimonial .card-images {
       display: flex;
@@ -7315,3 +7326,17 @@ header .hero {
         width: 60px;
         border-radius: 50%;
         margin-right: 1rem; }
+
+.banner {
+  background: url(../../images/banner.png);
+  height: 700px;
+  background-size: cover; }
+
+.blog {
+  background: #fff; }
+  .blog .card {
+    padding: 0; }
+  .blog__post {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
