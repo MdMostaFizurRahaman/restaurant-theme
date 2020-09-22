@@ -3,3 +3,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin text-primary {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 0;
+}

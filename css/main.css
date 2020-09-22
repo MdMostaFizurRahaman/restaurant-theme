@@ -7174,7 +7174,8 @@ a {
 
 p {
   font-size: 1.2rem;
-  font-weight: 100; }
+  font-weight: 100;
+  margin-bottom: 0; }
 
 header .home-alert {
   background: #662D90;
@@ -7264,6 +7265,19 @@ header .hero {
   background: url(../../images/footer@2x.png);
   background-size: cover;
   background-position: center; }
+  .footer__title {
+    height: 50px;
+    display: flex;
+    align-items: center; }
+    .footer__title img {
+      height: 100%; }
+  .footer__widget {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 0; }
 
 .section-title {
   text-align: center; }

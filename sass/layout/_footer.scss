@@ -3,4 +3,25 @@
     background: url(../../images/footer@2x.png);
     background-size: cover;
     background-position: center;
+
+    &__title{
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    &__widget{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @include text-primary;
+    }
+
+    .overlay{
+        
+    }
 }
