@@ -7278,6 +7278,9 @@ header .hero {
     font-size: 1.2rem;
     font-weight: 100;
     margin-bottom: 0; }
+  .footer .copyright {
+    border-top: 1px solid #fff;
+    align-items: center; }
 
 .section-title {
   text-align: center; }
