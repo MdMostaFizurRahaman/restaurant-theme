@@ -3,3 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Segoe UI', sans-serif !important;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4{
+    font-family: "Roboto Slab", serif;
+}
+
+a{
+    color: $dark;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+}

@@ -2,14 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Restaurant</title>
+    <title>Restaurant Theme</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 </head>
 <body>
     <header>
-        <section class="alert">
+        <section class="home-alert">
             <span>Covid-19</span> & <span>Safety Measures</span>
         </section>
+        <nav class="menu">
+           <div class="container">
+                <div class="menu__logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <ul class="menu__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu-cart">
+                    <div class="menu-cart__icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">0</span>
+                    </div>
+                    <span class="menu-cart__user"><i class="fas fa-user"></i></span>
+                    <a href="#" class="menu-cart__sign-in">Sign in</a>
+                </div>
+           </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero__text">
+                <h1 class="hero__title">Good Food For <span>Your Everyday</span></h1>
+                <p class="hero__subtitle">Get Tacos And Burritos For your crew</p>
+                <a href="#" class="hero__button">Order Now</a>
+            </div>
+        </section>
     </header>
+    <section class="about">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <img src="images/arrow.png" alt="arrow">
+                    <h2 class="card-title">How it works</h2>
+                    <p class="card-subtitle mb-2 text-dark">The process of our service</p>
+                    <div class="container row">
+                        <div class="card-content col-lg-6">
+
+                            <img src="images/snaks@2x.png" alt="">
+                            <h4>Select, your love to eat</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna </p>
+                        </div>
+
+                        <div class="card-content col-lg-6">
+                            <img src="images/delivery@2x.png" alt="">
+                            <h4>Select, your love to eat</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+    </section>
+
 </body>
 </html>

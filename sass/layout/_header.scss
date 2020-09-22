@@ -1,0 +1,46 @@
+header {
+    .home-alert{
+        background: $primary;
+        height: 40px;
+        color: white;
+        @include center;
+    }
+
+    .hero{
+        background: url("../../images/header@2x.png");
+        height: calc(100vh - 100px);
+        background-size: cover;
+        @include center;
+
+        &__text{
+            text-align: center;
+            color: $white;
+        }
+
+        &__title{
+            font-size: 3.5rem;
+            font-weight: 400;
+
+            span{
+                color: $secondary;
+            }
+        }
+
+        &__subtitle{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        &__button{
+            color: $white;
+            background: $secondary;
+            font-size: 1.3rem;
+            padding: 10px 30px;
+            display: inline-block;
+            border-radius: $border-radius;
+            text-transform: uppercase;
+        }
+    }
+}
+
