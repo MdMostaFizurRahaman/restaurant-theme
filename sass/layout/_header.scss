@@ -33,13 +33,8 @@ header {
         }
 
         &__button{
-            color: $white;
-            background: $secondary;
             font-size: 1.3rem;
             padding: 10px 30px;
-            display: inline-block;
-            border-radius: $border-radius;
-            text-transform: uppercase;
         }
     }
 }

@@ -7177,6 +7177,9 @@ p {
   font-weight: 100;
   margin-bottom: 0; }
 
+.card {
+  padding: 0; }
+
 header .home-alert {
   background: #662D90;
   height: 40px;
@@ -7205,13 +7208,8 @@ header .hero {
     text-transform: uppercase;
     margin-bottom: 1.5rem; }
   header .hero__button {
-    color: #fff;
-    background: #FFBF00;
     font-size: 1.3rem;
-    padding: 10px 30px;
-    display: inline-block;
-    border-radius: 22px;
-    text-transform: uppercase; }
+    padding: 10px 30px; }
 
 .menu {
   height: 80px; }
@@ -7241,27 +7239,12 @@ header .hero {
     display: flex;
     height: 100%;
     align-items: center; }
-    .menu-cart__icon {
-      margin-right: 1rem; }
-      .menu-cart__icon i:hover {
-        color: #FFBF00; }
-      .menu-cart__icon .badge {
-        display: inline-block;
-        background: #FFBF00;
-        border-radius: 50%; }
-    .menu-cart__user {
-      margin-right: 1rem; }
     .menu-cart__sign-in {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #FFBF00;
-      padding: 5px 30px;
-      border-radius: 22px;
-      color: #fff; }
+      padding: 5px 30px; }
+    .menu-cart img {
+      height: 20px; }
 
 .footer {
-  min-height: 500px;
   background: url(../../images/footer@2x.png);
   background-size: cover;
   background-position: center; }
@@ -7278,7 +7261,10 @@ header .hero {
     font-size: 1.2rem;
     font-weight: 100;
     margin-bottom: 0; }
-  .footer .copyright {
+  .footer__social {
+    display: flex;
+    align-items: center; }
+  .footer__copyright {
     border-top: 1px solid #fff;
     align-items: center; }
 
@@ -7290,24 +7276,35 @@ header .hero {
     font-size: 1.5rem;
     font-weight: 100; }
 
-.about {
-  padding: 150px 0;
-  background: #EFECE3; }
-  .about .card {
+.social {
+  position: relative; }
+  .social__image {
+    width: 170px; }
+  .social__overlay {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); }
+    .social__overlay img {
+      width: 50px; }
+
+.about {
+  background: #EFECE3;
+  padding: 150px 0; }
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .about .card {
+    max-width: 1000px;
     text-align: center; }
-    .about .card-subtitle {
-      font-size: 1.5rem;
-      font-weight: 400; }
-    .about .card-content {
-      padding: 2rem 4rem; }
-      .about .card-content img {
-        height: 150px; }
-      .about .card-content h4 {
-        margin-top: 2rem; }
+    .about .card-content img {
+      height: 150px; }
 
 .testimonial {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/testinomial.png);
@@ -7319,7 +7316,8 @@ header .hero {
     align-items: center;
     justify-content: center; }
   .testimonial .card {
-    max-width: 800px; }
+    max-width: 800px;
+    background: #EFECE3; }
     .testimonial .card-images {
       display: flex;
       flex-direction: column;
@@ -7330,10 +7328,6 @@ header .hero {
         clip-path: circle(50% at 50% 50%); }
       .testimonial .card-images img:not(:last-child) {
         margin-bottom: 1rem; }
-    .testimonial .card p {
-      font-size: 1.5rem;
-      font-weight: 100;
-      margin-bottom: 0; }
     .testimonial .card-user {
       margin-top: 2.5rem;
       display: flex;
@@ -7351,8 +7345,6 @@ header .hero {
 
 .blog {
   background: #fff; }
-  .blog .card {
-    padding: 0; }
   .blog__post {
     display: flex;
     align-items: center;

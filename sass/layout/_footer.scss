@@ -1,5 +1,4 @@
 .footer{
-    min-height: 500px;
     background: url(../../images/footer@2x.png);
     background-size: cover;
     background-position: center;
@@ -21,11 +20,12 @@
         @include text-primary;
     }
 
-    .overlay{
-
+    &__social{
+        display: flex;
+        align-items: center;
     }
 
-    .copyright{
+    &__copyright{
         border-top: 1px solid $white;
         align-items: center;
     }

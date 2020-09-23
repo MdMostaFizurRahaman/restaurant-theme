@@ -41,30 +41,12 @@
         height: 100%;
         align-items: center;
 
-        &__icon{
-            margin-right: 1rem;
-
-            i:hover{
-                color:$secondary;
-            }
-
-            .badge{
-                display: inline-block;
-                background: $secondary;
-                border-radius: 50%;
-            }
-        }
-
-        &__user{
-            margin-right: 1rem;
-        }
-
         &__sign-in{
-            @include center;
-            background: $secondary;
             padding: 5px 30px;
-            border-radius: $border-radius;
-            color: $white;
+        }
+
+        img{
+            height: 20px;
         }
 
     }

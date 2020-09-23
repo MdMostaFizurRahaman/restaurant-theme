@@ -1,25 +1,18 @@
 .about{
-    padding: 150px 0;
     background: $bg-secondary;
+    padding: 150px 0;
+
+    .container{
+        @include center;
+    }
     
     .card{
-        @include center;
-        width: 100%;
+        max-width: 1000px;
         text-align: center;
 
-        &-subtitle{
-            font-size: 1.5rem;
-            font-weight: 400;
-        }
-
         &-content{
-            padding: 2rem 4rem;
             img{
                 height: 150px;
-            }
-
-            h4{
-                margin-top: 2rem;
             }
         }
     }
@@ -38,6 +31,7 @@
 
     .card{
         max-width: 800px;
+        background: $bg-secondary;
         &-images{
             display: flex;
             flex-direction: column;
@@ -51,12 +45,6 @@
             img:not(:last-child){
                 margin-bottom: 1rem;
             }
-        }
-
-        p{
-            font-size: 1.5rem;
-            font-weight: 100;
-            margin-bottom: 0;
         }
 
         &-user{
@@ -84,9 +72,6 @@
 
 .blog{
     background: $bg-primary;
-    .card{
-        padding: 0;
-    }
 
     &__post{
         @include center;
