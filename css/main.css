@@ -7189,7 +7189,6 @@ header .home-alert {
   justify-content: center; }
 
 header .hero {
-  background: url("../../images/header@2x.png");
   height: calc(100vh - 100px);
   background-size: cover;
   display: flex;
@@ -7244,29 +7243,28 @@ header .hero {
     .menu-cart img {
       height: 20px; }
 
-.footer {
-  background: url(../../images/footer@2x.png);
-  background-size: cover;
-  background-position: center; }
-  .footer__title {
-    height: 50px;
-    display: flex;
-    align-items: center; }
-    .footer__title img {
-      height: 100%; }
-  .footer__widget {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 100;
-    margin-bottom: 0; }
-  .footer__social {
-    display: flex;
-    align-items: center; }
-  .footer__copyright {
-    border-top: 1px solid #fff;
-    align-items: center; }
+.footer__title {
+  height: 50px;
+  display: flex;
+  align-items: center; }
+  .footer__title img {
+    height: 100%; }
+
+.footer__widget {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 0; }
+
+.footer__social {
+  display: flex;
+  align-items: center; }
+
+.footer__copyright {
+  border-top: 1px solid #fff;
+  align-items: center; }
 
 .section-title {
   text-align: center; }
@@ -7307,9 +7305,7 @@ header .hero {
       height: 150px; }
 
 .testimonial {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/testinomial.png);
-  height: 700px;
-  background-size: cover; }
+  height: 700px; }
   .testimonial .container {
     height: 100%;
     display: flex;
@@ -7339,9 +7335,7 @@ header .hero {
         margin-right: 1rem; }
 
 .banner {
-  background: url(../../images/banner.png);
-  height: 700px;
-  background-size: cover; }
+  height: 700px; }
 
 .blog {
   background: #fff; }

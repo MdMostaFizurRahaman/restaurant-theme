@@ -7,7 +7,7 @@ header {
     }
 
     .hero{
-        background: url("../../images/header@2x.png");
+        // background: url("../../images/header@2x.png");
         height: calc(100vh - 100px);
         background-size: cover;
         @include center;
