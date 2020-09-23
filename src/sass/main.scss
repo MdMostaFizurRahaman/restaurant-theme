@@ -1,6 +1,7 @@
 //abstracts
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/utils";
 
 
 //vendors
@@ -9,6 +10,7 @@
 //base
 @import "base/font";
 @import "base/reset";
+@import "base/base";
 
 //layout
 @import "layout/header";
@@ -19,6 +21,7 @@
 
 //components
 @import "components/home-alert";
+@import "components/hero";
 @import "components/section-title";
 @import "components/social";
 @import "components/card";

@@ -1,247 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Restaurant Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
+
 <body>
     <header>
         <section class="home-alert">
             <span>Covid-19</span> & <span>Safety Measures</span>
         </section>
         <nav class="menu">
-           <div class="container">
-                <div class="menu__logo">
+            <div class="container">
+                <a class="menu__logo" href="index.html">
                     <img src="images/logo.png" alt="logo">
-                </div>
-                <ul class="menu__links">
+                </a>
+                <ul class="menu__links mr-5 d-none d-lg-flex">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="delivery.html">Delivery</a></li>
                     <li><a href="#">Gift Card</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="menu-cart">
+                <div class="menu-cart mr-md-3 mr-lg-0">
                     <div class="menu-cart__icon mr-3">
                         <img src="images/svgs/buy.svg" alt="cart">
                         <span class="badge badge-secondary">0</span>
                     </div>
-                    <img src="images/svgs/user.svg" alt="user" class="menu-cart__user mr-2">
-                    <a href="#" class="menu-cart__sign-in btn btn-secondary text-white">Sign in</a>
+                    <img src="images/svgs/user.svg" alt="user" class="menu-cart__user mr-2 d-none d-lg-inline-block">
+                    <a href="#" class="menu-cart__sign-in btn btn-secondary text-white d-none d-lg-inline-block">Sign
+                        in</a>
                 </div>
-           </div>
-        </nav>
+                <div id="menu-bar" class="d-inline-block d-lg-none">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>       
+    </header>
 
-        <section class="hero" style="background: url(images/header@2x.png);">
+    <nav class="sidebar d-lg-none">
+        <ul class="sidebar__links d-flex flex-column">
+            <li class="text-dark"><a href="index.html">Home</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="#">Gift Card</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="sidebar__user text-center">
+            <a href="#" class="btn btn-secondary btn-block text-white">Sign-In</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- Hero Section -->
+        <section class="hero" style="background: url(images/header@2x.png) no-repeat center;">
             <div class="hero__text">
                 <h1 class="hero__title">Good Food For <span>Your Everyday</span></h1>
                 <p class="hero__subtitle">Get Tacos And Burritos For your crew</p>
                 <a href="#" class="hero__button btn btn-secondary text-white text-uppercase">Order Now</a>
             </div>
         </section>
-    </header>
-
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <div class="section-title">
-                        <div class="section-title__icon">
-                            <img src="images/arrow.png" alt="">
-                        </div>
-                        <div class="section-title__content mt-1">
-                            <h2>Latest from Blog</h2>
-                            <p>The process of our service</p>
-                        </div>
-                    </div>
-                    <div class="container row">
-                        <div class="card-content col-lg-6 p-5">
-
-                            <img src="images/snaks@2x.png" alt="">
-                            <h4>Select, your love to eat</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna </p>
-                        </div>
-
-                        <div class="card-content col-lg-6 p-5">
-                            <img src="images/delivery@2x.png" alt="">
-                            <h4>Select, your love to eat</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna </p>
-                        </div>
-                    </div>
-                </div>
-              </div>
-        </div>
-
-    </section>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/testinomial.png); background-size: cover;">
-        <div class="container">
-            <div class="card p-5">
-                <div class="card-body row">
-                    <div class="card-images col-lg-2">
-                        <img src="images/team-1.jpg" alt="">
-                        <img src="images/team-2.jpg" alt="">
-                        <img src="images/team-3.jpg" alt="">
-                    </div>
-                    <div class="card-content col-lg-10 d-flex flex-column pl-5">
-                        <div class="card-description flex-grow-1">
-                            <h4 class="text-secondary">Very Taste and Professional Behave</h4>
-                            <p class="text-justify">There are many variations of passages of 
-                                Lorem Ipsum available, but the majority have 
-                                suffered alteration in some form, by injected
-                                humour, or randomized words which.</p>
-                        </div>
-                        <div class="card-user">
-                            <div class="card-user__image ">
-                                <img src="images/team-3.jpg" alt="">
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="section-title">
+                            <div class="section-title__icon">
+                                <img src="images/arrow.png" alt="">
                             </div>
-                            <div class="card-user__content">
-                                <p>Chad S. Jones</p>
-                                <p>Food Lover Customer</p>
+                            <div class="section-title__content mt-1">
+                                <h2>Latest from Blog</h2>
+                                <p>The process of our service</p>
+                            </div>
+                        </div>
+                        <div class="container row">
+                            <div class="card-content col-lg-6 p-5">
+
+                                <img src="images/snaks@2x.png" alt="">
+                                <h4>Select, your love to eat</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna </p>
+                            </div>
+
+                            <div class="card-content col-lg-6 p-5">
+                                <img src="images/delivery@2x.png" alt="">
+                                <h4>Select, your love to eat</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Banner Section -->
-    <div class="banner" style="background: url(images/banner.png); background-size:cover;">
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/testinomial.png) no-repeat center; background-size: cover;">
+            <div class="container">
+                <div class="card p-md-5 p-sm-2">
+                    <div class="card-body row">
+                        <div class="card-images col-2">
+                            <img src="images/team-1.jpg" alt="">
+                            <img src="images/team-2.jpg" alt="">
+                            <img src="images/team-3.jpg" alt="">
+                        </div>
+                        <div class="card-content col-10 pl-4 pl-md-5 pl-lg-5 d-flex flex-column">
+                            <div class="card-description flex-grow-1">
+                                <h4 class="text-secondary">Very Taste and Professional Behave</h4>
+                                <p class="text-justify">There are many variations of passages of
+                                    Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected
+                                    humour, or randomized words which.</p>
+                            </div>
+                            <div class="card-user">
+                                <div class="card-user__image ">
+                                    <img src="images/team-3.jpg" alt="">
+                                </div>
+                                <div class="card-user__content">
+                                    <p>Chad S. Jones</p>
+                                    <p>Food Lover Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Section -->
+        <div class="banner" style="background: url(images/banner.png) no-repeat center; background-size:cover;">
+
+        </div>
+
+        <!-- Blog Section -->
+        <section class="blog">
+            <div class="container p-5">
+                <div class="section-title mb-5">
+                    <div class="section-title__icon">
+                        <img src="images/arrow-orange.png" alt="">
+                    </div>
+                    <div class="section-title__content mt-1">
+                        <h2>Latest from Blog</h2>
+                        <p>The process of our service</p>
+                    </div>
+                </div>
+                <div class="blog__post row flex-column flex-lg-row">
+                    <div class="card mr-0 mr-lg-3 mb-3 mb-lg-0" style="width: 20rem;">
+                        <div class="card-header p-0">
+                            <img class="card-img-top" src="images/blog-1.png" alt="post-image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Fast Food</h5>
+                            <h5 class="card-subtitle mt-1 mb-1">Air Fryer French Fries</h5>
+                            <p class="card-text">There are many Variations of Passages of lorem ipsum</p>
+                        </div>
+                    </div>
+
+                    <div class="card mr-0 mr-lg-3 mb-3 mb-lg-0" style="width: 20rem;">
+                        <div class="card-header p-0">
+                            <img class="card-img-top" src="images/blog-2.png" alt="post-image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Fast Food</h5>
+                            <h5 class="card-subtitle mt-1 mb-1">Layered Yogurt Flatbreads</h5>
+                            <p class="card-text">There are many Variations of Passages of lorem ipsum</p>
+                        </div>
+                    </div>
+
+                    <div clasmr-0 s="card mb-3 mb-lg-0" style="width: 20rem;">
+                        <div class="card-header p-0">
+                            <img class="card-img-top" src="images/blog-3.png" alt="post-image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Fast Food</h5>
+                            <h5 class="card-subtitle mt-1 mb-1">Any Kind of Fruit Galette</h5>
+                            <p class="card-text">There are many Variations of Passages of lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section Footer -->
+        <footer class="footer"
+            style="background: url(images/footer@2x.png); background-size: cover; background-position: center;">
+            <div class="container pt-5 pb-2">
+                <div class="row">
+                    <div class="col-lg-4 pr-5">
+                        <div class="footer__title">
+                            <h3 class="text-secondary mr-3">About</h3>
+                            <img src="images/logo-transparent@2x.png" alt="">
+                        </div>
+
+                        <div class="footer__content mt-3 text-white">
+                            <p>There are many variation of passages of Lorem ipsum</p>
+                            <div class="mt-2">
+                                <p>21/0 Location Address Here,</p>
+                                <p>New York, USA</p>
+                            </div>
+                            <div class="mt-2">
+                                <p>515-799-5643</p>
+                                <p>515-799-5643</p>
+                            </div>
+                            <div class="mt-2">
+                                <p>deliveryinfo@l9ve.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer__title">
+                            <h3 class="text-secondary mr-3">Opening Hours</h3>
+                        </div>
+                        <div class="footer__content mt-3 text-white">
+                            <p>deliveryinfo@l9ve.com</p>
+                            <ul class="footer__widget">
+                                <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
+                                <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
+                                <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
+                                <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
+                                <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
+                                <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer__title">
+                            <h3 class="text-secondary mr-3">We are on Instagram</h3>
+                        </div>
+                        <div class="footer__social mt-5">
+                            <div class="social mr-3">
+                                <img class="social__image" src="images/footer-image-1.png" alt="">
+                                <div class="social__overlay">
+                                    <img src="images/svgs/instagram.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="social">
+                                <img class="social__image" src="images/footer-image-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row footer__copyright mt-5 mb-2 flex-md-column text-md-center">
+                    <div class="col-lg-6 text-white">
+                        <p>&#169; 2020 L9ve All rights reserved</p>
+                    </div>
+                    <div class="col-lg-6 footer__payment-method text-lg-right pt-1 mt-md-2">
+                        <img class="mr-2" src="images/paypal.png" alt="paypal">
+                        <img class="mr-2" src="images/mastercard.png" alt="mastercard">
+                        <img src="images/visa.png" alt="visa">
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
-
-    <!-- Blog Section -->
-    <section class="blog">
-        <div class="container p-5">
-            <div class="section-title mb-5">
-                <div class="section-title__icon">
-                    <img src="images/arrow-orange.png" alt="">
-                </div>
-                <div class="section-title__content mt-1">
-                    <h2>Latest from Blog</h2>
-                    <p>The process of our service</p>
-                </div>
-            </div>
-            <div class="blog__post row">
-                <div class="card mr-3" style="width: 20rem;" >
-                    <div class="card-header p-0">
-                        <img class="card-img-top" src="images/blog-1.png" alt="post-image">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title text-secondary">Fast Food</h5>
-                      <h5 class="card-subtitle mt-1 mb-1">Air Fryer French Fries</h5>
-                      <p class="card-text">There are many Variations of Passages of lorem ipsum</p>
-                    </div>
-                </div>
-
-                <div class="card mr-3" style="width: 20rem;" >
-                    <div class="card-header p-0">
-                        <img class="card-img-top" src="images/blog-2.png" alt="post-image">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title text-secondary">Fast Food</h5>
-                      <h5 class="card-subtitle mt-1 mb-1">Layered Yogurt Flatbreads</h5>
-                      <p class="card-text">There are many Variations of Passages of lorem ipsum</p>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 20rem;" >
-                    <div class="card-header p-0">
-                        <img class="card-img-top" src="images/blog-3.png" alt="post-image">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title text-secondary">Fast Food</h5>
-                      <h5 class="card-subtitle mt-1 mb-1">Any Kind of Fruit Galette</h5>
-                      <p class="card-text">There are many Variations of Passages of lorem ipsum</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Section Footer -->
-    <footer class="footer" style="background: url(images/footer@2x.png); background-size: cover; background-position: center;">
-        <div class="container pt-5 pb-2">
-            <div class="row">
-                <div class="col-lg-4 pr-5">
-                    <div class="footer__title">
-                        <h3 class="text-secondary mr-3">About</h3>
-                        <img src="images/logo-transparent@2x.png" alt="">
-                    </div>
-
-                    <div class="footer__content mt-3 text-white">
-                        <p>There are many variation of passages of Lorem ipsum</p>
-                        <div class="mt-2">
-                            <p>21/0 Location Address Here,</p>
-                            <p>New York, USA</p>
-                        </div>
-                        <div class="mt-2">
-                            <p>515-799-5643</p>
-                            <p>515-799-5643</p>
-                        </div>
-                        <div class="mt-2">
-                            <p>deliveryinfo@l9ve.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="footer__title">
-                        <h3 class="text-secondary mr-3">Opening Hours</h3>
-                    </div>
-                    <div class="footer__content mt-3 text-white">
-                        <p>deliveryinfo@l9ve.com</p>
-                        <ul class="footer__widget">
-                            <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
-                            <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
-                            <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
-                            <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
-                            <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
-                            <li>Monday--------- <span class="text-secondary">8.00-20.00</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="footer__title">
-                        <h3 class="text-secondary mr-3">We are on Instagram</h3>
-                    </div>
-                    <div class="footer__social mt-5">
-                        <div class="social mr-3">
-                            <img class="social__image" src="images/footer-image-1.png" alt="">
-                            <div class="social__overlay">
-                                <img src="images/svgs/instagram.svg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="social">
-                            <img  class="social__image" src="images/footer-image-2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row footer__copyright mt-5 mb-2">
-                <div class="col-lg-6 text-white">
-                    <p>&#169; 2020 L9ve All rights reserved</p>
-                </div>
-                <div class="col-lg-6 footer__payment-method text-right pt-1">
-                    <img src="images/paypal.png" alt="paypal">
-                    <img src="images/mastercard.png" alt="mastercard">
-                    <img src="images/visa.png" alt="visa">
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <script src="dist/js/main.js"></script>
 </body>
+
 </html>

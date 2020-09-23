@@ -18061,7 +18061,18 @@ module.exports = g;
 window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"];
 window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js"); //Rotate Arrow
+
+
+$(document).ready(function () {
+  $('.card-link').click(function () {
+    $(this).children('.arrow-down').toggleClass('rotate');
+  });
+  $('#menu-bar').click(function () {
+    $(this).toggleClass('change');
+    $('.sidebar').toggleClass('sidebar-show');
+  });
+});
 
 /***/ }),
 

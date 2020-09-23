@@ -1,3 +1,11 @@
-.rotate{
-    transform: rotate(180deg);
+.food-card{
+    width: 16rem;
+
+    @media (max-width:992px) {
+        width: 14rem;
+    }
+}
+
+.sauce-card{
+    width:13rem;
 }

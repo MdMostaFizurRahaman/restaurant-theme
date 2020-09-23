@@ -1,0 +1,22 @@
+a{
+    color: $dark;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.card{
+    padding: 0;
+}
+
+.bg-secondary{
+    background: $bg-grey;
+}

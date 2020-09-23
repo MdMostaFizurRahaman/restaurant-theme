@@ -1,34 +1,15 @@
 header {
-    .hero{
-        // background: url("../../images/header@2x.png");
-        height: calc(100vh - 100px);
-        background-size: cover;
-        @include center;
-
-        &__text{
-            text-align: center;
-            color: $white;
-        }
-
-        &__title{
-            font-size: 3.5rem;
-            font-weight: 400;
-
-            span{
-                color: $secondary;
-            }
-        }
-
-        &__subtitle{
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-        }
-
-        &__button{
-            font-size: 1.3rem;
-            padding: 10px 30px;
-        }
-    }
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 100;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
+
+.main{
+    margin-top: 120px;
+}
+
+
+
 
