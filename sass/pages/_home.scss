@@ -29,25 +29,22 @@
     }
 
     .card{
-        max-width: 800px;
+        max-width: 680px;
         background: $bg-secondary;
         &-images{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             img{
                 display: block;
                 width: 80px;
-                clip-path: circle(50% at 50% 50%);
+                border-radius: 50%;
             }
 
             img:not(:last-child){
                 margin-bottom: 1rem;
             }
+        
         }
 
         &-user{
-            margin-top: 2.5rem;
             display: flex;
             align-items: center;
 

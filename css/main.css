@@ -7312,20 +7312,15 @@ header .hero {
     align-items: center;
     justify-content: center; }
   .testimonial .card {
-    max-width: 800px;
+    max-width: 680px;
     background: #EFECE3; }
-    .testimonial .card-images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .testimonial .card-images img {
-        display: block;
-        width: 80px;
-        clip-path: circle(50% at 50% 50%); }
-      .testimonial .card-images img:not(:last-child) {
-        margin-bottom: 1rem; }
+    .testimonial .card-images img {
+      display: block;
+      width: 80px;
+      border-radius: 50%; }
+    .testimonial .card-images img:not(:last-child) {
+      margin-bottom: 1rem; }
     .testimonial .card-user {
-      margin-top: 2.5rem;
       display: flex;
       align-items: center; }
       .testimonial .card-user img {
