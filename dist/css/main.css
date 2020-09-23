@@ -11279,8 +11279,14 @@ header {
   background: #EFECE3;
 }
 
-.testimonial .card-images img {
+.testimonial .card-images {
+  position: relative;
   display: block;
+  margin: 0;
+}
+
+.testimonial .card-images img {
+  display: inline-block;
   width: 80px;
   border-radius: 50%;
 }
@@ -11289,6 +11295,10 @@ header {
   .testimonial .card-images img {
     width: 60px;
   }
+}
+
+.testimonial .card-images img.active {
+  border: 5px solid #FFBF00;
 }
 
 .testimonial .card-images img:not(:last-child) {
