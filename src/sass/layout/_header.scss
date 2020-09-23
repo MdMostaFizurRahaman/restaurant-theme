@@ -1,11 +1,4 @@
 header {
-    .home-alert{
-        background: $primary;
-        height: 40px;
-        color: white;
-        @include center;
-    }
-
     .hero{
         // background: url("../../images/header@2x.png");
         height: calc(100vh - 100px);

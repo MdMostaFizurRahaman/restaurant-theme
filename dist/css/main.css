@@ -10938,13 +10938,8 @@ p {
   padding: 0;
 }
 
-header .home-alert {
-  background: #662D90;
-  height: 40px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.bg-secondary {
+  background: #F2F2F2;
 }
 
 header .hero {
@@ -11062,6 +11057,15 @@ header .hero__button {
   align-items: center;
 }
 
+.home-alert {
+  background: #662D90;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-title {
   text-align: center;
 }
@@ -11077,6 +11081,7 @@ header .hero__button {
 
 .social {
   position: relative;
+  overflow: hidden;
 }
 
 .social__image {
@@ -11097,6 +11102,35 @@ header .hero__button {
 
 .social__overlay img {
   width: 50px;
+}
+
+.card-header {
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 0;
+}
+
+.card-header:hover img {
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  transition: transform 0.5s;
+}
+
+.modal-body {
+  background: #F2F2F2;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  position: absolute;
+}
+
+.modal-content {
+  border-radius: 0;
 }
 
 .about {
@@ -11169,5 +11203,9 @@ header .hero__button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 

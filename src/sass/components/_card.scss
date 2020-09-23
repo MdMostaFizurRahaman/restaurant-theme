@@ -1,0 +1,15 @@
+.card{
+    &-header{
+        overflow: hidden;
+        background: $bg-primary;
+        border-bottom: 0;
+
+        &:hover img{
+            transform: scale(1.1);
+        }
+    }
+
+    &-img-top{
+        transition: transform 0.5s;
+    }
+}

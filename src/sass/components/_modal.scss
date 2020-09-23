@@ -1,0 +1,16 @@
+.modal{
+    &-body{
+        background: $bg-grey;
+
+    }
+    &-dialog{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        position: absolute;
+    }
+
+    &-content{
+        border-radius: 0;
+    }
+}

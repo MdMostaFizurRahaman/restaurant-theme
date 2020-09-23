@@ -1,5 +1,6 @@
 .social {
     position: relative;
+    overflow: hidden;
 
     &__image{
         width: 170px;
@@ -17,4 +18,6 @@
             width: 50px;
         }   
     }
+
+
 }

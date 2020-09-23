@@ -18,8 +18,11 @@
 
 
 //components
+@import "components/home-alert";
 @import "components/section-title";
 @import "components/social";
+@import "components/card";
+@import "components/modal";
 
 //pages
 @import "pages/home";
