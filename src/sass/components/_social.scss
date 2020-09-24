@@ -1,9 +1,14 @@
 .social {
     position: relative;
     overflow: hidden;
+    &:hover &__overlay{       
+        transform: translateY(0);
+    }
 
     &__image{
         width: 170px;
+
+     
     }
     &__overlay{
         @include center;
@@ -13,10 +18,13 @@
         top: 0;
         left: 0;
         background: rgba(black, 0.5);
+        transform: translateY(100%);
+        transition: transform 0.5s;
 
         img{
             width: 50px;
-        }   
+        }  
+       
     }
 
 

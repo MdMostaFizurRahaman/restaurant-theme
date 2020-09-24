@@ -10992,6 +10992,12 @@ h6 {
   font-family: "Roboto Slab", serif;
 }
 
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
 a {
   color: #343a40;
   text-decoration: none;
@@ -11133,7 +11139,7 @@ header {
 }
 
 .change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-9px, -7px);
 }
 
 .footer__title {
@@ -11258,6 +11264,10 @@ header {
   overflow: hidden;
 }
 
+.social:hover .social__overlay {
+  transform: translateY(0);
+}
+
 .social__image {
   width: 170px;
 }
@@ -11272,10 +11282,16 @@ header {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  transition: transform 0.5s;
 }
 
 .social__overlay img {
   width: 50px;
+}
+
+.card {
+  border: none;
 }
 
 .card-header {
@@ -11399,6 +11415,7 @@ header {
   flex: 1 0 20rem;
   box-sizing: border-box;
   margin: 1rem;
+  background: #EFECE3;
 }
 
 @media screen and (min-width: 575px) {
@@ -11464,6 +11481,50 @@ header {
 @media screen and (min-width: 992px) {
   .food-card {
     max-width: calc(25% - 2em);
+  }
+}
+
+.checkbox-card {
+  position: relative;
+}
+
+.checkbox-card [type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox-card [type="checkbox"]:checked + .checkbox-card__overlay {
+  opacity: 0.5;
+}
+
+.checkbox-card [type="checkbox"]:checked ~ .checkbox-card__checkmark {
+  opacity: 1;
+}
+
+.checkbox-card__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #662D90;
+  top: 0;
+  left: 0;
+  border-radius: 22px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.checkbox-card__checkmark {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F2F2F2;
+  opacity: 0;
+}
+
+@media (max-width: 575px) {
+  .checkbox-card__checkmark {
+    font-size: 8rem;
   }
 }
 
