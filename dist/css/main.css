@@ -11337,17 +11337,50 @@ header {
   justify-content: center;
 }
 
-.food-card {
-  width: 16rem;
+.sauce-card {
+  flex: 1 0 13rem;
+  box-sizing: border-box;
+  margin: 0.5rem;
 }
 
-@media (max-width: 992px) {
-  .food-card {
-    width: 14rem;
+@media screen and (min-width: 575px) {
+  .sauce-card {
+    max-width: calc(50% -  1em);
   }
 }
 
-.sauce-card {
-  width: 13rem;
+@media screen and (min-width: 768px) {
+  .sauce-card {
+    max-width: calc(33% - 1em);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sauce-card {
+    max-width: calc(20% - 1em);
+  }
+}
+
+.food-card {
+  flex: 1 0 16rem;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 575px) {
+  .food-card {
+    max-width: calc(50% -  2em);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .food-card {
+    max-width: calc(25% - 2em);
+  }
+}
+
+.centered {
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
