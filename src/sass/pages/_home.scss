@@ -81,6 +81,24 @@
 .blog{
     background: $bg-primary;
 
+    .card{
+        flex: 1 0 20rem;
+        box-sizing: border-box;
+        margin: 1rem;
+
+        @media screen and (min-width: 575px) {
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+            max-width: 70%;
+        }
+        
+        @media screen and (min-width: 992px) {
+            max-width: calc(33% - 2em);
+        }
+    }
+
     &__post{
         @include center;
     }
