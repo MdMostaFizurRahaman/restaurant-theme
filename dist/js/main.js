@@ -18072,7 +18072,7 @@ $(document).ready(function () {
     $(this).toggleClass('change');
     $('.sidebar').toggleClass('sidebar-show');
   });
-});
+}); // Custom Select
 
 /***/ }),
 

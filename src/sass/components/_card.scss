@@ -14,3 +14,85 @@
         transition: transform 0.5s;
     }
 }
+
+.sauce-card {
+    flex: 1 0 13rem;
+    box-sizing: border-box;
+    margin: 0.5rem;
+
+    @media screen and (min-width: 575px) {
+        max-width: calc(50% -  1em);
+    }
+    
+    @media screen and (min-width: 768px) {
+        max-width: calc(33% - 1em);
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: calc(20% - 1em);
+    }
+}
+
+
+
+
+.food-card {
+    flex: 1 0 16rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    @media screen and (min-width: 575px) {
+        max-width: calc(50% -  2em);
+    }
+    
+    @media screen and (min-width: 992px) {
+        max-width: calc(25% - 2em);
+    }
+}
+
+
+.checkbox-card{
+    position: relative;
+
+    [type="checkbox"]{
+        visibility: hidden;
+        &:checked + .checkbox-card__overlay{
+            opacity: 0.5;
+        }
+
+        &:checked ~ .checkbox-card__checkmark{
+            opacity: 1;
+        }
+    }
+
+    &__overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $primary;
+        top: 0;
+        left: 0;
+        border-radius: $border-radius;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    &__checkmark{
+        font-size: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $bg-grey;
+        opacity: 0;
+
+        @media(max-width: 575px){
+            font-size: 8rem;
+        }
+    }
+}
+
+
+.centered {
+    margin: 0 auto;
+    padding: 0 2rem;
+}

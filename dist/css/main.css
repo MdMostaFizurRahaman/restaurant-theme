@@ -11308,6 +11308,97 @@ header {
   transition: transform 0.5s;
 }
 
+.sauce-card {
+  flex: 1 0 13rem;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 575px) {
+  .sauce-card {
+    max-width: calc(50% -  1em);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sauce-card {
+    max-width: calc(33% - 1em);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sauce-card {
+    max-width: calc(20% - 1em);
+  }
+}
+
+.food-card {
+  flex: 1 0 16rem;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 575px) {
+  .food-card {
+    max-width: calc(50% -  2em);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .food-card {
+    max-width: calc(25% - 2em);
+  }
+}
+
+.checkbox-card {
+  position: relative;
+}
+
+.checkbox-card [type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox-card [type="checkbox"]:checked + .checkbox-card__overlay {
+  opacity: 0.5;
+}
+
+.checkbox-card [type="checkbox"]:checked ~ .checkbox-card__checkmark {
+  opacity: 1;
+}
+
+.checkbox-card__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #662D90;
+  top: 0;
+  left: 0;
+  border-radius: 22px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.checkbox-card__checkmark {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F2F2F2;
+  opacity: 0;
+}
+
+@media (max-width: 575px) {
+  .checkbox-card__checkmark {
+    font-size: 8rem;
+  }
+}
+
+.centered {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .modal-body {
   background: #F2F2F2;
 }
@@ -11440,96 +11531,5 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.sauce-card {
-  flex: 1 0 13rem;
-  box-sizing: border-box;
-  margin: 0.5rem;
-}
-
-@media screen and (min-width: 575px) {
-  .sauce-card {
-    max-width: calc(50% -  1em);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sauce-card {
-    max-width: calc(33% - 1em);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .sauce-card {
-    max-width: calc(20% - 1em);
-  }
-}
-
-.food-card {
-  flex: 1 0 16rem;
-  box-sizing: border-box;
-  margin: 1rem;
-}
-
-@media screen and (min-width: 575px) {
-  .food-card {
-    max-width: calc(50% -  2em);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .food-card {
-    max-width: calc(25% - 2em);
-  }
-}
-
-.checkbox-card {
-  position: relative;
-}
-
-.checkbox-card [type="checkbox"] {
-  visibility: hidden;
-}
-
-.checkbox-card [type="checkbox"]:checked + .checkbox-card__overlay {
-  opacity: 0.5;
-}
-
-.checkbox-card [type="checkbox"]:checked ~ .checkbox-card__checkmark {
-  opacity: 1;
-}
-
-.checkbox-card__overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #662D90;
-  top: 0;
-  left: 0;
-  border-radius: 22px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.checkbox-card__checkmark {
-  font-size: 5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #F2F2F2;
-  opacity: 0;
-}
-
-@media (max-width: 575px) {
-  .checkbox-card__checkmark {
-    font-size: 8rem;
-  }
-}
-
-.centered {
-  margin: 0 auto;
-  padding: 0 2rem;
 }
 
