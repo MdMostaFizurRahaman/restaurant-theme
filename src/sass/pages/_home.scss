@@ -9,6 +9,8 @@
     .card{
         max-width: 1000px;
         text-align: center;
+        box-shadow: 0px 3px 13px #00000029;
+        border-radius: 47px;
 
         &-content{
             img{
@@ -30,6 +32,7 @@
     .card{
         max-width: 680px;
         background: $bg-secondary;
+        border-radius: 28px;
         &-images{
             position: relative;
             display: block;
@@ -57,6 +60,7 @@
         &-user{
             display: flex;
             align-items: center;
+      
 
             img{
                 display: inline-block;
@@ -86,6 +90,12 @@
         box-sizing: border-box;
         margin: 1rem;
         background: $bg-secondary;
+        border-radius: 28px;
+
+        
+        .card-header {
+            border-radius: 28px 28px 0 0;
+        }
 
         @media screen and (min-width: 575px) {
             max-width: 100%;
