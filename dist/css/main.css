@@ -11414,6 +11414,57 @@ header {
   border-radius: 0;
 }
 
+.select {
+  position: relative;
+}
+
+.select ul {
+  list-style: none;
+  margin: 0;
+}
+
+.select .option {
+  flex-grow: 1;
+}
+
+.select .option img {
+  height: 80px;
+}
+
+.select__default {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.select__option {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: 50;
+  display: none;
+}
+
+.select__option .option {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.select__option .option:hover {
+  background: #EFECE3;
+}
+
+.select__option .option img {
+  height: 80px;
+  -webkit-clip-path: circle(40% at 50% 50%);
+          clip-path: circle(40% at 50% 50%);
+}
+
+.show {
+  display: block;
+}
+
 .about {
   background: #EFECE3;
   padding: 150px 0;
