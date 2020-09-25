@@ -11450,6 +11450,10 @@ header {
   position: relative;
 }
 
+.checkbox-card__header img {
+  border-radius: 40px;
+}
+
 .checkbox-card__body {
   text-align: center;
 }

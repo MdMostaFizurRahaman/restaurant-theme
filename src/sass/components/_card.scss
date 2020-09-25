@@ -91,6 +91,7 @@
 
         img{
             @extend .card-img-top;
+            border-radius: $custom-card-border-radius;
         }
     }
 
