@@ -18094,7 +18094,8 @@ $(document).ready(function () {
         $(this).parents('.select').children('.select__default').html("<li class=\"option\" data-value=".concat(value, ">").concat(html, "</li> ").concat(arrow));
       }
     });
-  }
+  } //Custom Checkbox
+
 });
 
 /***/ }),

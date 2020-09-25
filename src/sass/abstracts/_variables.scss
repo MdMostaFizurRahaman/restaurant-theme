@@ -1,14 +1,18 @@
 // Color 
 $purple : #662D90;
 $orange : #FFBF00;
-$white:    #fff !default;
+$white:    #fff ;
+$teal: #5cb8b2;
+
 
 $primary: $purple;
 $secondary: $orange;
+$info: $teal;
 
 $bg-primary : $white;
 $bg-secondary: #EFECE3;
 $bg-grey: #F2F2F2;
+$bg-teal: $teal;
 
 
 $border-radius: 22px;

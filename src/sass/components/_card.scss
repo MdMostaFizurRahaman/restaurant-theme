@@ -12,6 +12,7 @@
 
     &-img-top{
         transition: transform 0.5s;
+        // border-radius: 0;
     }
 }
 
@@ -59,31 +60,48 @@
     }
 }
 
+.custom-checkbox{
+    // visibility: hidden;
+    height: 0;
+    width: 0;
+    &:checked + .card{
+        background: $teal;
+    }
+
+    &:checked + .card .card-header{
+        background: $teal;
+    }
+
+    &:checked + .card .checkbox-card__checkmark{
+        opacity: 1;
+        animation: pop 0.3s;
+    }
+}
+
 
 .checkbox-card{
+    @extend .card;
     position: relative;
+    transition: background 0.3s;
 
-    [type="checkbox"]{
-        visibility: hidden;
-        &:checked + .checkbox-card__overlay{
-            opacity: 0.5;
-        }
+    &__header{
+        @extend .card-header;
+        transition: background 0.3s;
+        position: relative;
 
-        &:checked ~ .checkbox-card__checkmark{
-            opacity: 1;
+        img{
+            @extend .card-img-top;
         }
     }
 
-    &__overlay{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: $primary;
-        top: 0;
-        left: 0;
-        border-radius: $custom-card-border-radius;
-        opacity: 0;
-        transition: opacity 0.3s;
+    &__body{
+        @extend .card-body;
+        text-align: center;
+    }
+
+      
+    &:hover img{
+        transform: scale(1);
     }
 
     &__checkmark{
@@ -105,4 +123,18 @@
 .centered {
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+@keyframes pop{
+    0%{
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    50%{
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
