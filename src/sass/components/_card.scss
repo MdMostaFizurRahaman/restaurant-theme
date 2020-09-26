@@ -65,11 +65,11 @@
     height: 0;
     width: 0;
     &:checked + .card{
-        background: $teal;
+        background: $bg-teal;
     }
 
     &:checked + .card .card-header{
-        background: $teal;
+        background: $bg-teal;
     }
 
     &:checked + .card .checkbox-card__checkmark{
@@ -106,17 +106,13 @@
     }
 
     &__checkmark{
-        font-size: 5rem;
+        font-size: 3rem;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $bg-grey;
         opacity: 0;
-
-        @media(max-width: 575px){
-            font-size: 8rem;
-        }
     }
 }
 

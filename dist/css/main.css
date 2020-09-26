@@ -11463,19 +11463,13 @@ header {
 }
 
 .checkbox-card__checkmark {
-  font-size: 5rem;
+  font-size: 3rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #F2F2F2;
   opacity: 0;
-}
-
-@media (max-width: 575px) {
-  .checkbox-card__checkmark {
-    font-size: 8rem;
-  }
 }
 
 .centered {
