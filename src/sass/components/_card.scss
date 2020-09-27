@@ -47,9 +47,20 @@
     box-sizing: border-box;
     margin: 1rem;
     border-radius: $custom-card-border-radius;
+    display: flex;
 
     .card-header {
         border-radius: $custom-card-border-radius $custom-card-border-radius 0 0;
+        flex-grow: 1;
+
+        .card-img-top{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    .card-body{
+        flex-grow: 0;
     }
     @media screen and (min-width: 575px) {
         max-width: calc(50% -  2em);

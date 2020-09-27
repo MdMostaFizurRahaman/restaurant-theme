@@ -11397,11 +11397,28 @@ header {
   box-sizing: border-box;
   margin: 1rem;
   border-radius: 40px;
+  display: flex;
 }
 
 .food-card .card-header,
 .food-card .checkbox-card__header {
   border-radius: 40px 40px 0 0;
+  flex-grow: 1;
+}
+
+.food-card .card-header .card-img-top,
+.food-card .checkbox-card__header .card-img-top,
+.food-card .card-header .checkbox-card__header img,
+.checkbox-card__header .food-card .card-header img,
+.food-card .checkbox-card__header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.food-card .card-body,
+.food-card .checkbox-card__body {
+  flex-grow: 0;
 }
 
 @media screen and (min-width: 575px) {
